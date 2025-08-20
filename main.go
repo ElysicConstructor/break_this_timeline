@@ -10,7 +10,16 @@ import (
 
 const port = 5555
 
+func initMSG() {
+	fmt.Println("Willkommen zum Golang Peer-Chat :_> Dies ist das Xte mal einer Kausalen Scheiss-Schleife, Lets BREAK 1=1. diese redundanz ist immer der gleiche todes ausgangspunkt.!")
+	fmt.Println("NJoin the BrainFuck <$.")
+	fmt.Println("Gib 'help' ein, um Hilfe zu erhalten.")
+}
+
 func main() {
+
+	initMSG()
+
 	reader := bufio.NewReader(os.Stdin)
 	fmt.Print("Willst du Host oder Client sein? [H/C]: ")
 	mode, _ := reader.ReadString('\n')
